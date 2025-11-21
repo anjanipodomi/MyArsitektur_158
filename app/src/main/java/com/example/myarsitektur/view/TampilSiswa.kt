@@ -12,5 +12,16 @@ fun TampilSiswa(
         Pair(stringResource(id = R.string.gender), statusUISiswa.gender),
         Pair(stringResource(id = R.string.alamat), statusUISiswa.alamat)
     )
-
+    Scaffold(
+        modifier = Modifier,
+        topBar = {
+            TopAppBar(
+                title = { Text(text = stringResource(id = R.string.tampil), color = Color.White) },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
+                    containerColor = colorResource(id = R.color.teal_700)
+                )
+            )
+        }
+    ) { isiRuang ->
+    }
 }
