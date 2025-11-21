@@ -16,5 +16,9 @@ fun FormSiswa(
         topBar = {
             TopAppBar(
                 title = {Text(text=stringResource(R.string.app_name), color =  Color.White)},)
+            colors = TopAppBarDefaults.mediumTopAppBarColors(
+                containerColor = colorResource(id = R.color.teal_700))
+            )}
+    ){
 
 }
