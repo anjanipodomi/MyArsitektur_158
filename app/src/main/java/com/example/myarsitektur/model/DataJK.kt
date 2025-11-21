@@ -1,6 +1,6 @@
 package com.example.myarsitektur.model
 object DataJK {
-    val JenisK= listOf(
+    val JenisJK= listOf(
         "Laki-laki",
         "Perempuan"
     )
