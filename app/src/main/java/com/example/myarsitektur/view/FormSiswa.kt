@@ -74,6 +74,14 @@ fun FormSiswa(
                     txtAlamat = it
                 }
             )
+            Spacer(modifier = Modifier.height(height = 30.dp))
+            Button(
+                modifier = Modifier.width(width = 250.dp),
+                enabled = txtNama.isNotEmpty() && txtAlamat.isNotEmpty() && txtGender.isNotEmpty(),
+                onClick = {
+                    onSubmitButtonClicked(mutableListOf(txtNama, txtGender, txtAlamat))
+                }
+            )
 
 
 
