@@ -19,14 +19,23 @@ fun FormSiswa(
             colors = TopAppBarDefaults.mediumTopAppBarColors(
                 containerColor = colorResource(id = R.color.teal_700))
             )}
-    ){ isiRuang ->
+    ) { isiRuang ->
         Column(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(paddingValues = isiRuang),
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
-        )
-
+        ) {
+            OutlinedTextField(
+                value = txtNama,
+                singleLine = true,
+                shape = MaterialTheme.shapes.medium,
+                modifier = Modifier
+                    .width(width = 250.dp)
+                    .padding(top = 20.dp),
+                label = { Text(text = "Nama Lengkap")
+        }
+    }
 
 }
